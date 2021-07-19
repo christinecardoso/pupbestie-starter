@@ -33,6 +33,11 @@
     "maintained node versions",
     "> 5%"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{css,js,html}": "stylelint --fix",
     "*.{js,html}": "eslint --fix"
@@ -89,7 +94,9 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "tailwindcss": "^2.1.2",
-    "workbox-cli": "^6.1.5"
+    "workbox-cli": "^6.1.5",
+    "markdown-it": "^12.0.4",
+    "markdown-it-anchor": "^7.1.0"
   },
   "dependencies": {
     "alpinejs": "^3.0.1"
