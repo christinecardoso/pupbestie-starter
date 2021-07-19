@@ -1,4 +1,6 @@
 const fs = require('fs');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (config) {
   config.setLiquidOptions({
@@ -11,6 +13,21 @@ module.exports = function (config) {
   config.addPassthroughCopy('./src/favicon.ico');
   config.addPassthroughCopy('./src/manifest.json');
   config.addPassthroughCopy('./src/robots.txt');
+
+  // This allows Eleventy to watch for file changes during local development.
+  config.setUseGitIgnore(false);
+
+  // Customize Markdown library and settings:
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "#"
+  });
+  config.setLibrary("md", markdownLibrary);
 
   // 404
   config.setBrowserSyncConfig({
@@ -25,6 +42,8 @@ module.exports = function (config) {
         });
       },
     },
+    ui: false,
+    ghostMode: false
   });
 
   return {
@@ -33,9 +52,22 @@ module.exports = function (config) {
       output: 'src/_site',
     },
     passthroughFileCopy: true,
-    templateFormats: ['html', 'md', 'liquid'],
-    htmlTemplateEngine: 'liquid',
-    dataTemplateEngine: 'liquid',
-    markdownTemplateEngine: 'liquid',
+    templateFormats: [
+      "md",
+      "njk",
+      "html",
+      "liquid"
+    ],
+    // Optional (default is shown)
+    pathPrefix: "/",
+
+    // Pre-process *.html files with: (default: `liquid`)
+    htmlTemplateEngine: "njk",
+
+    // Opt-out of pre-processing global data JSON files: (default: `liquid`)
+    dataTemplateEngine: false,
+
+    // Pre-process *.md files with: (default: `liquid`)
+    markdownTemplateEngine: "njk",
   };
 };
