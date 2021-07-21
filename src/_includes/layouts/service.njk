@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-service
+---
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1>{{ title }}</h1>
+    <div class="prose prose-gray prose-lg text-gray-500">
+    {{ content | safe }}
+    </div>
+  </div>
+</main>
+{% endblock %}
