@@ -39,8 +39,8 @@
     }
   },
   "lint-staged": {
-    "*.{css,js,html}": "stylelint --fix",
-    "*.{js,html}": "eslint --fix"
+    "*.{css,js,html,njk}": "stylelint --fix",
+    "*.{js,jsx,html,njk,md,mdx}": "eslint --fix"
   },
   "scripts": {
     "clean": "rimraf src/_site",
@@ -53,11 +53,11 @@
     "build:snowpack": "snowpack build",
     "build:sw": "workbox generateSW",
     "lint": "run-s lint:*",
-    "lint:eslint": "eslint --ext .js,.html src/",
-    "lint:stylelint": "stylelint src/**/*.js src/**/*.html src/**/*.css",
+    "lint:eslint": "eslint --ext .js,.html src/, .njk src/",
+    "lint:stylelint": "stylelint src/**/*.js src/**/*.html src/**/*.njk src/**/*.css",
     "format": "run-s format:*",
-    "format:eslint": "eslint --ext .js,.html src/ --fix",
-    "format:stylelint": "stylelint src/**/*.js src/**/*.html src/**/*.css --fix",
+    "format:eslint": "eslint --ext .js,.html src/,.njk src/ --fix",
+    "format:stylelint": "stylelint src/**/*.js src/**/*.html src/**/*.njk src/**/*.css --fix",
     "validate": "run-s build lint",
     "setup": "npm install && npm run validate",
     "prepare": "husky install"

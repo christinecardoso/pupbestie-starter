@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "name": "Dog Walks",
+      "slug": "dog-walks",
+      "url":  "/services/dog-walks/",
+      "locations": [
+        {
+          "name": "Dog Walks Miami",
+          "slug": "dog-walks-miami"
+        },
+        {
+          "name": "Dog Walks Miami Beach",
+          "slug": "dog-walks-miami-beach"
+        }
+      ]
+    },
+    {
+      "name": "Housesitting",
+      "slug": "housesitting",
+      "url": "/services/housesitting/",
+      "locations": [
+        {
+          "name": "Housesitting Miami",
+          "slug": "housesitting-miami"
+        },
+        {
+          "name": "Housesitting Miami Beach",
+          "slug": "housesitting-miami-beach"
+        }
+      ]
+    },
+    {
+      "name": "Daycare",
+      "slug": "daycare",
+      "url": "/services/daycare/",
+      "locations": [
+        {
+          "name": "Daycare Miami",
+          "slug": "daycare-miami"
+        },
+        {
+          "name": "Daycare Miami Beach",
+          "slug": "daycare-miami-beach"
+        }
+      ]
+    },
+    {
+      "name": "Drop In Visits",
+      "slug": "drop-in-visits",
+      "url": "/services/drop-in-visits/",
+      "locations": [
+        {
+          "name": "Drop In Visits Miami",
+          "slug": "drop-in-visits-miami"
+        },
+        {
+          "name": "Drop In Visits Miami Beach",
+          "slug": "drop-in-visits-miami-beach"
+        }
+      ]
+    },
+    {
+      "name": "Pet Transportation",
+      "slug": "pet-transportation",
+      "url": "/services/pet-transportation/",
+      "locations": [
+        {
+          "name": "Pet Transportation Miami",
+          "slug": "pet-transportation-miami"
+        },
+        {
+          "name": "Pet Transportation Miami Beach",
+          "slug": "pet-transportation-miami-beach"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Dog Walks Miami",
+      "slug": "dog-walks-miami"
+    },
+    {
+      "name": "Dog Walks Miami Beach",
+      "slug": "dog-walks-miami-beach"
+    },
+    {
+      "name": "Pet Transportation Miami",
+      "slug": "pet-transportation-miami"
+    },
+    {
+      "name": "Pet Transportation Miami Beach",
+      "slug": "pet-transportation-miami-beach"
+    },
+    {
+      "name": "Drop In Visits Miami",
+      "slug": "drop-in-visits-miami"
+    },
+    {
+      "name": "Drop In Visits Miami Beach",
+      "slug": "drop-in-visits-miami-beach"
+    },
+    {
+      "name": "Daycare Miami",
+      "slug": "daycare-miami"
+    },
+    {
+      "name": "Daycare Miami Beach",
+      "slug": "daycare-miami-beach"
+    },
+    {
+      "name": "Housesitting Miami",
+      "slug": "housesitting-miami"
+    },
+    {
+      "name": "Housesitting Miami Beach",
+      "slug": "housesitting-miami-beach"
+    }
+  ]
+}

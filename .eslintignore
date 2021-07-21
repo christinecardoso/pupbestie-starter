@@ -1,2 +1,4 @@
 dist/*
 src/_site/*
+*.njk
+src/_data/*

@@ -1,0 +1,56 @@
+{
+  "miami": [
+    {
+      "name": "Brickell",
+      "slug": "brickell",
+      "url":  "/miami/brickell/"
+    },
+    {
+      "name": "Edgewater",
+      "slug": "edgewater",
+      "url":  "/miami/edgewater/"
+    },
+    {
+      "name": "Midtown Miami",
+      "slug": "midtown",
+      "url":  "/miami/midtown/"
+    },
+    {
+      "name": "Miami Design District",
+      "slug": "design-district",
+      "url":  "/miami/design-district/"
+    }
+  ],
+  "miamibeach": [
+    {
+      "name": "South Beach",
+      "slug": "south-beach",
+      "url":  "/miami-beach/west-ave/"
+    },
+    {
+      "name": "South of Fifth",
+      "slug": "south-of-fifth",
+      "url":  "/miami-beach/south-of-fifth/"
+    },
+    {
+      "name": "West Ave",
+      "slug": "west-ave",
+      "url":  "/miami-beach/west-ave/"
+    },
+    {
+      "name": "Sunset Harbor",
+      "slug": "sunset-harbor",
+      "url":  "/miami-beach/sunset-harbor/"
+    },
+    {
+      "name": "Mid Beach",
+      "slug": "midbeach",
+      "url":  "/miami-beach/midbeach/"
+    },
+    {
+      "name": "Prarie Road",
+      "slug": "prarie-road",
+      "url":  "/miami-beach/prarie-road/"
+    }
+  ]
+}

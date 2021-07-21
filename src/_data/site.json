@@ -1,4 +1,6 @@
 {
-  "name": "11ty + Snowpack + Tailwind CSS",
-  "url": "https://11st-starter-kit.netlify.app"
+  "name": "Pupbestie Miami",
+  "url": "http://pupbestie.com",
+  "local_url": "http://localhost:8080"
+
 }
