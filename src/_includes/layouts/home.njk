@@ -4,7 +4,6 @@ templateClass: tmpl-home
 ---
 
 {% block content %}
-
 <main id="main-content" tabindex="-1">
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-3xl font-bold leading-tight text-gray-900">
@@ -30,6 +29,24 @@ templateClass: tmpl-home
     {% set services = services.items %}
     {% include "partials/services.njk" %}
     {% include "partials/forms/inquiry.njk" %}
+
+    {% import "partials/forms/forms.njk" as forms %}
+
+    {{ forms.label('Your Name', name='name') }}
+    {{ forms.field('name', name='name', placeholder='Christine', type='text') }}
+    {{ forms.desc('Please fill out this field.') }}
+    {{ forms.label('Service') }}
+    {{ forms.select('services', services) }}
+    {{ forms.label('Phone', name='phone') }}
+    {{ forms.field('phone', name='phone', type='phone', placeholder='305-973-6784') }}
+    {{ forms.label('Email', name='email') }}
+    {{ forms.field('email', name='email', type='email', placeholder='hi@pupbestie.com') }}
+    {{ forms.label('Dates', name='flatpickr') }}
+    {{ forms.field('flatpickr', id='flatpickr', name='flatpickr', placeholder='Select some dates..') }}
+    {{ forms.label('Pet Name(s) and Breed', name='pets') }}
+    {{ forms.field('pets', name='pets', placeholder='Champ (French Bulldog), Aubrey (Min Pin)', type='text') }}
+    {{ forms.desc('Briefly describe your pup(s).') }}
+
 
   </div>
 
