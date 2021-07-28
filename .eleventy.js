@@ -13,6 +13,13 @@ module.exports = function (config) {
   config.addPassthroughCopy('./src/favicon.ico');
   config.addPassthroughCopy('./src/manifest.json');
   config.addPassthroughCopy('./src/robots.txt');
+  config.addPassthroughCopy({
+    "./node_modules/flatpickr/dist/flatpickr.min.css": "styles/flatpickr.css"
+  });
+  config.addPassthroughCopy({
+    "./node_modules/flatpickr/dist/flatpickr.min.js": "scripts/flatpickr.js"
+  });
+
 
   // This allows Eleventy to watch for file changes during local development.
   config.setUseGitIgnore(false);
