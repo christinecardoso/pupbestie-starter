@@ -35,6 +35,11 @@ templateClass: tmpl-home
 
 </main>
 {% endblock %}
+
+{% block headerScripts %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+{% endblock %}
+
 {% block footerScripts %}
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>var example = flatpickr('#flatpickr', {
