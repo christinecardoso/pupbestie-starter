@@ -1,0 +1,17 @@
+<h3>Miami</h3>
+<ul class="neighborhoods flex space-x-4">
+  {% for neighborhood in neighborhoods.miami %}
+    <li>
+        {{ neighborhood.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Miami Beach</h3>
+<ul class="neighborhoods flex space-x-4">
+  {% for n in neighborhoods.miamibeach %}
+    <li>
+        {{ n.name }}
+    </li>
+  {% endfor %}
+</ul>

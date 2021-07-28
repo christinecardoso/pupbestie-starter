@@ -1,0 +1,20 @@
+<ul class="flex space-x-4">
+  {% for serviceLoc in serviceLocations %}
+    {% if serviceLoc.url == page.url %}
+      {% set highlight = 'cursor-default' %}
+      {% set current = 'aria-current="page"' %}
+    {% else %}
+      {% set highlight = 'underline' %}
+      {% set current = '' %}
+    {% endif %}
+    <li>
+      <a
+        href="{{ site.url }}{{ serviceLoc.slug }}"
+        class="text-base font-bold {{ highlight }}"
+        {{ current }}
+      >
+        {{ serviceLoc.name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
