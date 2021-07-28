@@ -8,6 +8,8 @@
   ],
   "rules": {
     "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "block-no-empty": null,
     "order/order": [
       "custom-properties",
       "declarations"
