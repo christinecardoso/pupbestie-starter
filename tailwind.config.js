@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.md'],
+  purge: ['./src/**/*.html', './src/**/*.md', './src/**/*.njk'],
   darkMode: false,
   theme: {
     extend: {
@@ -11,5 +11,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
