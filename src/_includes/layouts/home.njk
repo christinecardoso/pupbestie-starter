@@ -38,5 +38,17 @@ templateClass: tmpl-home
 
 {% block footerScripts %}
 <script src="/scripts/flatpickr.js"></script>
-<script src="/scripts/footer.js"></script>
+<script type="text/javascript">
+flatpickr('#flatpickr', {
+  mode: "multiple",
+  dateFormat: "Y-m-d",
+  // defaultDate: ["2021-07-20", "2021-07-23"],
+  enableTime: true,
+  altInput: true,
+  altFormat: "F j @ H:i",
+  dateFormat: "m-d-Y H:i",
+  minDate: "today",
+  maxDate: new Date().fp_incr(90) // 14 days from now
+});
+</script>
 {% endblock %}
