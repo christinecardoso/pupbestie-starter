@@ -100,5 +100,6 @@
   },
   "dependencies": {
     "alpinejs": "^3.0.1"
+    "flatpickr": "^4.6.9"
   }
 }
