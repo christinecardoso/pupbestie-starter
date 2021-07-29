@@ -4,7 +4,7 @@
 {{ forms.field('name', name='name', placeholder='Christine', type='text') }}
 {{ forms.desc('Please fill out this field.') }}
 {{ forms.label('Service') }}
-{{ forms.select('services', services) }}
+{{ forms.select('services', id='services', services) }}
 {{ forms.label('Phone', name='phone') }}
 {{ forms.field('phone', name='phone', type='phone', placeholder='305-973-6784') }}
 {{ forms.label('Email', name='email') }}

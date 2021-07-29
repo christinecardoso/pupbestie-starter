@@ -1,6 +1,6 @@
-{% macro field(name, id='form-' . name, placeholder='', value='', type='text', name='') %}
+{% macro field(name, id=name, placeholder='', value='', type='text', name='') %}
 <div class="field">
-  <input type="{{ type }}" name="{{ name }}" id="{{ id }}"
+  <input type="{{ type }}" name="{{ name }}" id="form-{{ id }}"
          placeholder="{{ placeholder | escape }}"
          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"/>
 </div>
@@ -8,7 +8,7 @@
 
 {% macro select(name, id=name, options, placeholder='', value='', type='text', name='') %}
 <div class="field relative">
-  <select name="{{ name }}" id="{{ id }}"
+  <select name="{{ name }}" id="form-{{ id }}"
          placeholder="{{ placeholder | escape }}"
          class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"/>
          {% for x in options %}
@@ -21,9 +21,9 @@
 </div>
 {% endmacro %}
 
-{% macro label(text, id='form-' . text) %}
+{% macro label(text, name=text) %}
 <div>
-  <label for="form-{{ id }}"
+  <label for="form-{{ name }}"
     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
     {{ text }}
   </label>
