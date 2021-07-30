@@ -1,7 +1,7 @@
-<div class="flex space-x-4">
+<div class="flex flex-wrap space-x-4 lg:space-x-0">
   <div>
     <h3 class="font-bold">Miami Beach</h3>
-    <ul class="neighborhoods lg:flex lg:space-x-4 py-5">
+    <ul class="neighborhoods lg:flex lg:flex-wrap lg:space-x-4 py-5">
       {% for n in neighborhoods.miamibeach %}
         <li>
             {{ n.name }}
@@ -11,7 +11,7 @@
   </div>
   <div>
     <h3 class="font-bold">Miami</h3>
-    <ul class="neighborhoods lg:flex lg:space-x-4 py-5">
+    <ul class="neighborhoods lg:flex lg:flex-wrap lg:space-x-4 py-5">
       {% for neighborhood in neighborhoods.miami %}
         <li>
             {{ neighborhood.name }}
