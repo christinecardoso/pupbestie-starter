@@ -22,15 +22,16 @@ templateClass: tmpl-home
     </div>
   </div>
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <h3 class="font-bold uppercase">Services</h3>
+    <h3 class="font-bold uppercase text-3xl">Services</h3>
     {% set services = services.items %}
     {% include "partials/services.njk" %}
   </div>
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <h3 class="font-bold uppercase">Service Areas</h3>
+    <h3 class="font-bold uppercase text-3xl">Service Areas</h3>
     {% include "partials/neighborhoods.njk" %}
   </div>
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h3 class="text-3xl font-bold text-center leading-tight">Request a Booking</h3>
     {% include "partials/forms/form-inquiry.njk" %}
   </div>
 

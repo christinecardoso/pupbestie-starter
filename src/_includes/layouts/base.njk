@@ -5,10 +5,10 @@
   </head>
   <body
     class="min-h-screen bg-white"
+    x-cloak
     data-env="{{ node.env }}"
     x-data="{ open: false }"
-    x-init="() => { setTimeout(() => { open = true }, 1500); }"
-  >
+    x-init="() => { setTimeout(() => { open = true }, 1500); }">
     {% include "partials/site-header.njk" %}
 
     <div class="py-10">
