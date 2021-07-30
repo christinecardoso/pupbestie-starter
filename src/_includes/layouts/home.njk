@@ -15,20 +15,25 @@ templateClass: tmpl-home
       <p class="text-xl">
         {{ intro.desc }}
       </p>
+      {# <p>As seen on Rover</p> #}
     </div>
     <div class="prose prose-gray prose-lg text-gray-500">
       {{ content }}
     </div>
   </div>
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    {% include "partials/neighborhoods.njk" %}
-    {# {% set serviceLocations = services.locations %}
-    {% include "partials/serviceLocations.njk" %} #}
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h3 class="font-bold uppercase">Services</h3>
     {% set services = services.items %}
     {% include "partials/services.njk" %}
-    {% include "partials/forms/inquiry.njk" %}
+  </div>
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h3 class="font-bold uppercase">Service Areas</h3>
+    {% include "partials/neighborhoods.njk" %}
+  </div>
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     {% include "partials/forms/form-inquiry.njk" %}
   </div>
+
 </main>
 {% endblock %}
 
