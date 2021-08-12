@@ -6,24 +6,28 @@
     {
       "name": "Amanda K.",
       "pet": "Jack Daniels",
+      "breed": "Jack Russell Terrier",
       "date": "Jul 20, 2021",
       "review": "Christine was great! I will be using her Tuesday and Thursdays. Highly recommended."
     },
     {
       "name": "Peter D.",
       "pet": "Roger",
+      "breed": "Golden Doodle",
       "date": "Apr 1, 2021",
       "review": "Christine instantly connected with our pup, made him comfortable and happy while we were out. Came back to a very happy dog every time. Christine is prompt and friendly and a natural with dogs! Highly recommend."
     },
     {
       "name": "William D.",
       "pet": "Mercer",
+      "breed": "Daschund",
       "date": "Aug 9, 2021",
       "review": "Christine was fantastic! Very caring friendly! Took Mercer on multiple adventures throughout the day. Will Defintely use Christine again and refer her to my friends."
     },
     {
       "name": "Cate B.",
       "pet": "Stella",
+      "breed": "Chihuahua",
       "date": "Mar 31, 2021",
       "review": "Christine was so great! We used her multiple times while visiting Miami and Stella grew to love her. Would HIGHLY recommend to anyone looking for a dog walker or sitter."
     }

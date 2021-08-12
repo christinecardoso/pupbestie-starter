@@ -5,7 +5,7 @@
 
     <div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
       <span class="md:block">What Our</span>
-      <span class="md-block">Customers</span>
+      <span class="md-block">Pup's Families</span>
       <span class="block">Are Saying!</span>
     </div>
 
@@ -44,9 +44,15 @@
 
         <div x-show.immediate="testimonialActive === 3">
           <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 3">
-            Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+            Christine instantly connected with our pup, made him comfortable and happy while we were out. Came back to a very happy dog every time. Christine is prompt and friendly and a natural with dogs! Highly recommend.
           </p>
         </div>
+        <div x-show.immediate="testimonialActive === 4">
+          <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 4">
+            Christine was so great! We used her multiple times while visiting Miami and Stella grew to love her. Would HIGHLY recommend to anyone looking for a dog walker or sitter.
+          </p>
+        </div>
+
       </div>
 
       <div class="flex my-4 justify-center items-center">
@@ -64,23 +70,33 @@
           @click.prevent="testimonialActive = 3"
           class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
           :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }"
-        >JW</button>
+        >PD</button>
+        <button
+          @click.prevent="testimonialActive = 4"
+          class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+          :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 4, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 4 }"
+        >CB</button>
       </div>
 
       <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
         <div class="text-center" x-show="testimonialActive == 1">
           <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Amanda K.</h2>
-          <small class="text-gray-500 text-xs md:text-sm truncate">Jack Daniels, Chihuahua</small>
+          <small class="text-gray-500 text-xs md:text-sm truncate">Jack Daniels, Jack Russell Terrier</small>
         </div>
 
         <div class="text-center" x-show="testimonialActive == 2">
+          <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">William D.</h2>
+          <small class="text-gray-500 text-xs md:text-sm truncate">Mercer, Daschund</small>
+        </div>
+
+        <div class="text-center" x-show="testimonialActive == 3">
           <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Peter D.</h2>
           <small class="text-gray-500 text-xs md:text-sm truncate">Roger, Golden Doodle</small>
         </div>
 
-        <div class="text-center" x-show="testimonialActive == 3">
-          <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">William D.</h2>
-          <small class="text-gray-500 text-xs md:text-sm truncate">Mercer, Daschund</small>
+        <div class="text-center" x-show="testimonialActive == 4">
+          <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Cate B.</h2>
+          <small class="text-gray-500 text-xs md:text-sm truncate">Stella, Chihuahua</small>
         </div>
       </div>
     </div>
