@@ -19,6 +19,11 @@
       "name": "Miami Design District",
       "slug": "design-district",
       "url":  "/miami/design-district/"
+    },
+    {
+      "name": "Downtown Miami",
+      "slug": "downtown-miami",
+      "url":  "/miami/downtown-miami/"
     }
   ],
   "miamibeach": [
